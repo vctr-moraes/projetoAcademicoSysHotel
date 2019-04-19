@@ -1,2 +1,3 @@
 # projetoAcademicoSysHotel
-Meu primeiro sistema desenvolvido em PHP na disciplina de Programação para Web do prof. José Ilton Chiaradia
+Meu primeiro sistema desenvolvido em PHP na disciplina de Programação para Web do prof. José Ilton Chiaradia.
+Sistema para reserva de acomodações em hotel.
