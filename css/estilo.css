@@ -1,0 +1,51 @@
+h1, h2, h3, h4, h5 {
+    font-family: cambria;
+}
+
+p {
+    font-family: cambria;
+    font-size: 17px;
+    color: #333333;
+}
+
+a{
+    font-family: cambria;
+    color: black;
+    text-decoration: none;
+}
+
+a:hover{
+	text-decoration: underline;
+	color: grey;
+    text-decoration: none;
+}
+
+div.row{
+    font-size: 17px;
+}
+
+button{
+    float: left;
+    color: white;
+    background-color: green;
+    font-size: 12pt;
+}
+
+button:hover{
+    color: black;
+    background-color: white;
+}
+
+form{
+    font-family: calibri;
+}
+
+h1#clienteAdmin:hover{
+    color: grey;
+}
+
+.footer {
+    position:absolute;
+    bottom:0;
+    align-self: center;
+}
