@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
 	<title>Alterar Dados</title>
 	<meta charset="utf-8">
@@ -23,14 +24,16 @@
 	</div>
 	<br>
 
-	<a href="clienteAdmin.php"><h1 style="color: blue">Área do Cliente</h1></a>
+	<a href="clienteAdmin.php">
+		<h1 style="color: blue">Área do Cliente</h1>
+	</a>
 	<hr width="1200">
 	<br>
 	<a href="reservar.php">Fazer Reserva</a>&nbsp;&nbsp;&nbsp;
 	<a href="verReserva.php">Visualizar Reserva</a>&nbsp;&nbsp;&nbsp;
 	<a href="editarUsuario.php">Minhas Informações</a>&nbsp;&nbsp;&nbsp;
 	<a href="logout.php">Sair</a><br><br>
-	
+
 	<?php
 		include_once("validar.php");
 		include_once("saudacao.php");
@@ -46,37 +49,38 @@
 
 		$conexao = mysqli_connect($servidor, $usuario, $senha, $banco) or die("Erro ao conectar" . mysqli_error());
 		$myquery = "select endereco, telefone, email, senha from mydb.cliente where cpf = " . $_SESSION["login"];
-		$res = mysqli_query($conexao, $myquery) or die ("Erro ao pesquisar dados do cliente " . mysqli_error());
+		$res = mysqli_query($conexao, $myquery) or die("Erro ao pesquisar dados do cliente " . mysqli_error());
 
-		while($registro = mysqli_fetch_assoc($res)){
+		while ($registro = mysqli_fetch_assoc($res)) {
 			$endereco = $registro['endereco'];
 			$telefone = $registro['telefone'];
 			$email = $registro['email'];
 			$senha = $registro['senha'];
 
-			    echo "
-					<form name=\"formCadastro\" action =\"salvarEdicaoCliente.php\" method =\"post\">
-						Endereço <br>
-						<input type=\"text\" name=\"Fendereco\" size=\"110\" value=\"$endereco\"> <br><br>
-						Telefone <br>
-						<input type=\"text\" name=\"Ftelefone\" size=\"110\" value=\"$telefone\"> <br><br>
-						E-mail <br>
-						<input type=\"Email\" name=\"Femail\" size=\"110\" value=\"$email\"> <br><br>
-						Senha <br>
-						<input type=\"password\" name=\"Fpassword\" size=\"110\" maxlength=\"8\" placeholder=\"Somente números\" value=\"$senha\"><br><br>
-						<a href=\"editarUsuario.php\">Cancelar</a>&nbsp;&nbsp;&nbsp;
-						<input type=\"submit\" name=\"Enviar\" value=\"Confirmar\" onclick=\"return validar()\">
-					</form>
-			    ";
+			echo "
+						<form name=\"formCadastro\" action =\"salvarEdicaoCliente.php\" method =\"post\">
+							Endereço <br>
+							<input type=\"text\" name=\"Fendereco\" size=\"110\" value=\"$endereco\"> <br><br>
+							Telefone <br>
+							<input type=\"text\" name=\"Ftelefone\" size=\"110\" value=\"$telefone\"> <br><br>
+							E-mail <br>
+							<input type=\"Email\" name=\"Femail\" size=\"110\" value=\"$email\"> <br><br>
+							Senha <br>
+							<input type=\"password\" name=\"Fpassword\" size=\"110\" maxlength=\"8\" placeholder=\"Somente números\" value=\"$senha\"><br><br>
+							<a href=\"editarUsuario.php\">Cancelar</a>&nbsp;&nbsp;&nbsp;
+							<input type=\"submit\" name=\"Enviar\" value=\"Confirmar\" onclick=\"return validar()\">
+						</form>
+						";
 		}
 	?>
 	<br><br><br>
-	
+
 </body>
-	<footer>
-		<hr width="1200">
-		<center>
-			<p>Golden Tulip :: Av. Nossa Sra. dos Navegantes - Enseada do Suá - Vitória - Espírito Santo <br> Telefone: (27) 3533-1300 - Email: atendimento@goldentulip.com</p>
-		</center>
-	</footer>
+<footer>
+	<hr width="1200">
+	<center>
+		<p>Golden Tulip :: Av. Nossa Sra. dos Navegantes - Enseada do Suá - Vitória - Espírito Santo <br> Telefone: (27) 3533-1300 - Email: atendimento@goldentulip.com</p>
+	</center>
+</footer>
+
 </html>

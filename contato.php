@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
 	<title>Contato</title>
 	<meta charset="utf-8">
@@ -42,10 +43,11 @@
 	<br><br><br>
 
 </body>
-	<footer>
-		<hr width="1200">
-		<center>
-			<p>Golden Tulip :: Av. Nossa Sra. dos Navegantes - Enseada do Suá - Vitória - Espírito Santo <br> Telefone: (27) 3533-1300 - Email: atendimento@goldentulip.com</p>
-		</center>
-	</footer>
+<footer>
+	<hr width="1200">
+	<center>
+		<p>Golden Tulip :: Av. Nossa Sra. dos Navegantes - Enseada do Suá - Vitória - Espírito Santo <br> Telefone: (27) 3533-1300 - Email: atendimento@goldentulip.com</p>
+	</center>
+</footer>
+
 </html>

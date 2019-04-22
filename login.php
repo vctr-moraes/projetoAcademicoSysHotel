@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
 	<title>Login</title>
 	<meta charset="utf-8">
@@ -27,15 +28,15 @@
 	<hr width="1200">
 	<br>
 
-	<?php 
-		//Exibe mensagem de erro, caso ocorra
-		if(isset($_GET["erro"])){
-			$erro = $_GET["erro"];
-			echo "<center><font color = 'red'>$erro</font></center>";
-		}
+	<?php
+	//Exibe mensagem de erro, caso ocorra
+	if (isset($_GET["erro"])) {
+		$erro = $_GET["erro"];
+		echo "<center><font color = 'red'>$erro</font></center>";
+	}
 	?>
 
-	<form name="formLogin" action = "autenticacao.php" method = "post">
+	<form name="formLogin" action="autenticacao.php" method="post">
 		CPF <br>
 		<input type="text" name="Fcpf" maxlength="11"><br><br>
 		Senha <br>
@@ -46,10 +47,11 @@
 	</form>
 
 </body>
-	<div class="footer">
-		<hr width="1200">
-		<center>
-			<p>Golden Tulip :: Av. Nossa Sra. dos Navegantes - Enseada do Suá - Vitória - Espírito Santo <br> Telefone: (27) 3533-1300 - Email: atendimento@goldentulip.com</p>
-		</center>
-	</div>
+<div class="footer">
+	<hr width="1200">
+	<center>
+		<p>Golden Tulip :: Av. Nossa Sra. dos Navegantes - Enseada do Suá - Vitória - Espírito Santo <br> Telefone: (27) 3533-1300 - Email: atendimento@goldentulip.com</p>
+	</center>
+</div>
+
 </html>

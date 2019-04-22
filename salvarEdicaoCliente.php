@@ -24,4 +24,3 @@
 
 	mysqli_close();
 	header("Location: editarUsuario.php#tabs-4");
-?>

@@ -51,28 +51,28 @@
 			$dataSaida = $registro['dataSaida'];
 			$acomodacao = $registro['acomodacao'];
 
-		echo "
-			<form name=\"formReserva\" action=\"salvarEdicaoReserva.php\" method=\"POST\">
-				Acomodação <br>
-				<select name=\"Facomodacao\">
-					<option value=\"Apartamento\">Apartamento</option>
-					<option value=\"Suite\">Suíte</option>
-					<option value=\"Suite Cobertura\">Suíte Cobertura</option>
-				</select><br><br>
-				Entrada <br>
-				<input type=\"date\" name=\"FDTentrada\" id=\"entrada\" size=\"110\" min=\"<?php print date('Y-m-d'); ?>\"> <br><br>
-				Saída <br>
-				<input type=\"date\" name=\"FDTsaida\" id=\"saida\" size=\"110\" min=\"<?php print date('Y-m-d', strtotime('+ 1 day')); ?>\"><br><br>
-				Forma de Pagamento <br>
-				<select name=\"FTPpgto\">
-					<option value=\"Especie\">Espécie</option>
-					<option value=\"Cheque\">Chuque</option>
-					<option value=\"Cartao de Credito\">Cartão de Crédito</option>
-				</select><br><br>
-				<a href=\"editarUsuario.php\">Cancelar</a>&nbsp;&nbsp;&nbsp;
-				<input type=\"submit\" name=\"Enviar\" value=\"Confirmar Alteração\" onclick=\"return validarReserva()\">
-			</form>
-		";
+			echo "
+				<form name=\"formReserva\" action=\"salvarEdicaoReserva.php\" method=\"POST\">
+					Acomodação <br>
+					<select name=\"Facomodacao\">
+						<option value=\"Apartamento\">Apartamento</option>
+						<option value=\"Suite\">Suíte</option>
+						<option value=\"Suite Cobertura\">Suíte Cobertura</option>
+					</select><br><br>
+					Entrada <br>
+					<input type=\"date\" name=\"FDTentrada\" id=\"entrada\" size=\"110\" min=\"<?php print date('Y-m-d'); ?>\"> <br><br>
+					Saída <br>
+					<input type=\"date\" name=\"FDTsaida\" id=\"saida\" size=\"110\" min=\"<?php print date('Y-m-d', strtotime('+ 1 day')); ?>\"><br><br>
+					Forma de Pagamento <br>
+					<select name=\"FTPpgto\">
+						<option value=\"Especie\">Espécie</option>
+						<option value=\"Cheque\">Chuque</option>
+						<option value=\"Cartao de Credito\">Cartão de Crédito</option>
+					</select><br><br>
+					<a href=\"editarUsuario.php\">Cancelar</a>&nbsp;&nbsp;&nbsp;
+					<input type=\"submit\" name=\"Enviar\" value=\"Confirmar Alteração\" onclick=\"return validarReserva()\">
+				</form>
+			";
 		}
 	?>
 	<br><br><br>

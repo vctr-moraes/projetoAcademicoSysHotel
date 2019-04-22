@@ -53,4 +53,3 @@
 	}
 	mysqli_close($conexao);
 	header("Location:clienteAdmin.php");
-?>

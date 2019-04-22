@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
 	<title>Sobre o Hotel</title>
 	<meta charset="utf-8">
@@ -35,15 +36,15 @@
 					<a href="acomodacoes.php">Conheça nossas acomodações.</a>
 				</p>
 			</td>
-			<td></td><td></td><td></td><td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
 			<td>
 				<img src="imagens/sobre.jpg" width="400">
 			</td>
 		</tr>
 	</table>
-
-	
-
 
 </body>
 <footer>
@@ -52,4 +53,5 @@
 		<p>Golden Tulip :: Av. Nossa Sra. dos Navegantes - Enseada do Suá - Vitória - Espírito Santo <br> Telefone: (27) 3533-1300 - Email: atendimento@goldentulip.com</p>
 	</center>
 </footer>
+
 </html>

@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
 	<title>Cadastro</title>
 	<meta charset="utf-8">
@@ -26,7 +27,7 @@
 	<h1>Cadastro</h1>
 	<hr width="1200">
 	<br>
-	<form name="formCadastro" action = "usuario.php" method = "post">
+	<form name="formCadastro" action="usuario.php" method="post">
 		Nome <br>
 		<input type="text" name="Fnome" size="110" maxlength="45"> <br><br>
 		CPF <br>
@@ -45,10 +46,11 @@
 	<br><br><br>
 
 </body>
-	<footer>
-		<hr width="1200">
-		<center>
-			<p>Golden Tulip :: Av. Nossa Sra. dos Navegantes - Enseada do Suá - Vitória - Espírito Santo <br> Telefone: (27) 3533-1300 - Email: atendimento@goldentulip.com</p>
-		</center>
-	</footer>
+<footer>
+	<hr width="1200">
+	<center>
+		<p>Golden Tulip :: Av. Nossa Sra. dos Navegantes - Enseada do Suá - Vitória - Espírito Santo <br> Telefone: (27) 3533-1300 - Email: atendimento@goldentulip.com</p>
+	</center>
+</footer>
+
 </html>

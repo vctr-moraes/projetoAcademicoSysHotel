@@ -1,11 +1,12 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
 	<title>Cliente Admin</title>
 	<meta charset="utf-8">
 	<link rel="stylesheet" type="text/css" href="css/estilo.css">
 	<script type="text/javascript" language="javascript">
-		function confirmar(){
+		function confirmar() {
 			alert("Reserva realizada com sucesso!");
 		}
 	</script>
@@ -25,17 +26,19 @@
 	</div>
 	<br>
 
-	<a href="clienteAdmin.php"><h1 style="color: blue">Área do Cliente</h1></a>
+	<a href="clienteAdmin.php">
+		<h1 style="color: blue">Área do Cliente</h1>
+	</a>
 	<hr width="1200">
 	<br>
 	<a href="reservar.php">Fazer Reserva</a>&nbsp;&nbsp;&nbsp;
 	<a href="verReserva.php">Visualizar Reserva</a>&nbsp;&nbsp;&nbsp;
 	<a href="editarUsuario.php">Minhas Informações</a>&nbsp;&nbsp;&nbsp;
 	<a href="logout.php">Sair</a><br><br>
-	
+
 	<?php
-		include_once("validar.php");
-		include_once("saudacao.php");
+	include_once("validar.php");
+	include_once("saudacao.php");
 	?>
 
 	<h3>Preencha o formulário para realizar sua reserva</h3>
@@ -58,15 +61,16 @@
 			<option value="Cartao de Credito">Cartão de Crédito</option>
 		</select><br><br>
 		<input type="reset" name="" value="Limpar">
-		<input type="submit" name="Enviar" value="Efetuar Reserva" onclick="return validarReserva()", onclick="return confirmar()">
+		<input type="submit" name="Enviar" value="Efetuar Reserva" onclick="return validarReserva()" , onclick="return confirmar()">
 	</form>
 
 	<br><br><br>
 </body>
-	<footer>
-		<hr width="1200">
-		<center>
-			<p>Golden Tulip :: Av. Nossa Sra. dos Navegantes - Enseada do Suá - Vitória - Espírito Santo <br> Telefone: (27) 3533-1300 - Email: atendimento@goldentulip.com</p>
-		</center>
-	</footer>
+<footer>
+	<hr width="1200">
+	<center>
+		<p>Golden Tulip :: Av. Nossa Sra. dos Navegantes - Enseada do Suá - Vitória - Espírito Santo <br> Telefone: (27) 3533-1300 - Email: atendimento@goldentulip.com</p>
+	</center>
+</footer>
+
 </html>

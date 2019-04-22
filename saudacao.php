@@ -15,4 +15,3 @@
 		$nomeUsuario = $registro['nome'];
 		echo "Olá $nomeUsuario!";
 	}
-?>

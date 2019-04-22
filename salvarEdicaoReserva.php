@@ -49,4 +49,3 @@
 
 	mysqli_close();
 	header("Location: verReserva.php");
-?>

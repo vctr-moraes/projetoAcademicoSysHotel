@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
 	<title>Seja bem-vindo ao SysHotel</title>
 	<meta charset="utf-8">
@@ -31,4 +32,5 @@
 		<p>Golden Tulip :: Av. Nossa Sra. dos Navegantes - Enseada do Suá - Vitória - Espírito Santo <br> Telefone: (27) 3533-1300 - Email: atendimento@goldentulip.com</p>
 	</center>
 </footer>
+
 </html>
